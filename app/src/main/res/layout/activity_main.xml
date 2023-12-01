@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#424FA1"
+    >
+
+    <!-- Fragmento con texto arriba -->
+    <TextView
+        android:id="@+id/textViewFragment"
+        android:layout_width="0dp"
+        android:layout_height="27dp"
+        android:background="#8A8CEF"
+        android:text="Ejemplo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- CardView que ocupa media pantalla con fondo gris oscuro -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="4dp"
+        app:cardBackgroundColor="#555454"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewFragment"
+        app:layout_constraintHeight_percent="0.5">
+
+        <!-- Contenido de la CardView -->
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="190dp"
+            android:layout_height="172dp"
+            android:layout_gravity="center"
+            app:layout_constraintBottom_toTopOf="@+id/textView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.5"
+            app:srcCompat="@drawable/lobo" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Soy Cesar Garrido"
+            android:textColor="#BFBFBF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/btLlamar"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="136dp"
+        android:layout_height="42dp"
+        android:background="#DC0F0F"
+        android:backgroundTint="#CF2727"
+        android:backgroundTintMode="add"
+        android:text="Llamar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.058"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.658" />
+
+    <Button
+        android:id="@+id/btChiste"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="136dp"
+        android:layout_height="42dp"
+        android:background="#DC0F0F"
+        android:backgroundTint="#CF2727"
+        android:backgroundTintMode="add"
+        android:text="Chistes"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.941"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.838" />
+
+    <Button
+        android:id="@+id/btDados"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="136dp"
+        android:layout_height="42dp"
+        android:background="#DC0F0F"
+        android:backgroundTint="#CF2727"
+        android:backgroundTintMode="add"
+        android:text="Dados"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.941"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.751" />
+
+    <Button
+        android:id="@+id/btEnlace"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="136dp"
+        android:layout_height="42dp"
+        android:background="#DC0F0F"
+        android:backgroundTint="#CF2727"
+        android:backgroundTintMode="add"
+        android:text="enlace"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.058"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.751" />
+
+    <Button
+        android:id="@+id/btentrada"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="136dp"
+        android:layout_height="42dp"
+        android:background="#DC0F0F"
+        android:backgroundTint="#CF2727"
+        android:backgroundTintMode="add"
+        android:text="ENTRADA"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.941"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.658" />
+
+    <Button
+        android:id="@+id/btajustes"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="136dp"
+        android:layout_height="42dp"
+        android:background="#DC0F0F"
+        android:backgroundTint="#CF2727"
+        android:backgroundTintMode="add"
+        android:text="Ajustes"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.058"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.838" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
